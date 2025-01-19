@@ -12,66 +12,102 @@
     <title>Contacto</title>
 </head>
 <body id="body">
-    <header id="header">
-        <nav id="nav">
-            <section class="section-title-logo">
-            <a href="#"><img src="../icons/logo-drew.png" alt="logo-drew" class="header-logo"></a>
-            <a href="../index.html"><h1>DREW</h1></a>
-            </section>
-
-            <section class="section-header">
-                <ul>
-                    <li><a href="catalogo.html">CATÁLOGO</a></li>
-                    <li><a href="ubicacion.html">UBICACIÓN</a></li>
-                    <li><a href="nosotros.html">NOSOTROS</a></li>
-                    <li><a href="#">CONTACTO</a></li>
-                </ul>
-                <div class="navUserCart">
-                    <i class="fa-solid fa-user fa-2xl"></i>
-                    <i class="fa-solid fa-cart-plus fa-2xl"></i>
+        <!-- HEADER -->
+        <header id="header">
+            <nav class="navbar navbar-expand-md" id="nav">
+                <div class="header__marca">
+                    <a href="../index.html" class="header__enlace-logo">
+                        <img src="../icons/logo-drew.png" alt="Logo Drew" class="header__imagen-logo">
+                    </a>
+                    <a href="../index.html" class="header__enlace-titulo">
+                        <h1 class="header__titulo">DREW</h1>
+                    </a>
                 </div>
-            </section>
-        </nav>
-    </header>
+    
+                <!-- BOOTSTRAP BOTON HAMBURGUESA -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="header__menu">
+                        <ul class="header__lista">
+                            <li class="header__item"><a href="catalogo.html" class="header__enlace">CATÁLOGO</a></li>
+                            <li class="header__item"><a href="#" class="header__enlace">UBICACIÓN</a></li>
+                            <li class="header__item"><a href="nosotros.html" class="header__enlace">NOSOTROS</a></li>
+                            <li class="header__item"><a href="contacto.html" class="header__enlace">CONTACTO</a></li>
+                        </ul>
+                        <div class="header__acciones">
+                            <i class="header__icono fa-solid fa-user fa-2xl"></i>
+                            <i class="header__icono fa-solid fa-cart-plus fa-2xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
+        <!-- MAIN -->
     <main id="main">
-        <div class="contacto-main">
-            <section class="contacto-main-section">
+        <div class="contacto__main">
+            <section class="contacto__main--section">
                 <h2>CONTACTO</h2>
                 <p>Telefono: +54 (348) 4123-456</p>
                 <p>Correo Electronico: proyectocoderhousefranco@gmail.com</p>
                 <h2>DUDAS FRECUENTES</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error tenetur quia omnis, saepe dolorum nisi praesentium modi quisquam voluptates libero architecto velit earum placeat recusandae sunt ea accusantium optio, magnam sit maxime ex. Consectetur, blanditiis, minima ea fuga quisquam mollitia quia voluptates porro illum facilis vero aut sapiente est. Hic nostrum voluptatibus possimus dolorem. Consectetur praesentium voluptatem autem dolorem pariatur neque, earum molestias id. Exercitationem quia nam dolorem. Ab, porro, voluptatum itaque blanditiis eius repellat neque aut non labore similique consequatur voluptate officiis quia laudantium. Harum possimus quos dolores ipsa. Accusantium quod velit, ex, non sit rem voluptatibus id atque quia nemo debitis placeat et maxime veniam dolores ad minima dicta veritatis nam quam reiciendis soluta illo. Eveniet exercitationem delectus animi molestiae natus dignissimos nobis cumque blanditiis ducimus dolor maiores corrupti nisi quas, numquam dolorum accusantium tenetur optio omnis iure laborum id error quibusdam vitae ratione? Eaque voluptatum dolore voluptatem veritatis mollitia distinctio ad aliquam est architecto odit ab obcaecati tempore eum porro reprehenderit facilis, consectetur itaque ipsum at laboriosam. Veritatis quod excepturi dolorem accusantium minima odio dicta, est maxime animi! Dicta illum porro, nulla blanditiis voluptatibus nobis sequi quae debitis, velit maiores nemo qui deleniti odit optio cumque deserunt numquam quibusdam reprehenderit. Pariatur dolor molestiae, dolorem accusamus earum ratione inventore quo soluta magnam veniam id consequatur, facere doloribus eligendi sunt porro ullam dignissimos libero obcaecati hic placeat sed dolores? Itaque, quas incidunt perferendis architecto accusantium dolores non laboriosam aliquam quasi ipsum error quis maxime cumque vel, molestiae corporis mollitia neque nam. Mollitia repudiandae dolor tempore dignissimos animi! Delectus nesciunt quidem mollitia, odio quibusdam excepturi ducimus vitae ex sit illum officia labore perferendis impedit maxime quia veritatis nihil dicta. Asperiores, quae dicta nisi ipsam numquam nesciunt iste veniam voluptatibus ipsa error itaque fuga delectus totam libero beatae ipsum voluptas maiores harum sequi? Mollitia ab numquam nobis iure assumenda? In ab doloremque ipsam nihil eum dignissimos placeat incidunt, dolores eius aut adipisci </p>
+                <p>¿Qué tipo de ropa ofrecen?
+                    En nuestro catálogo encontrarás una amplia variedad de prendas para todos los estilos, incluyendo ropa casual, formal y deportiva. Trabajamos con diseños modernos y materiales de alta calidad para garantizar tu comodidad y satisfacción.</p>
+                <p>¿Cómo sé cuál es mi talla?
+                    En cada producto encontrarás una guía de tallas detallada que te ayudará a elegir la opción que mejor se adapte a ti. Si tienes dudas, puedes contactarnos y con gusto te asesoraremos.</p>
+                <p>¿Hacen envíos a todo el país?
+                    ¡Sí! Realizamos envíos a cualquier parte del país. El costo del envío y el tiempo de entrega varían según tu ubicación. Durante el proceso de compra, podrás conocer los detalles específicos.</p>
+                <p>¿Cuál es el tiempo estimado de entrega?
+                    El tiempo de entrega dependerá de tu ubicación. Generalmente, los envíos tardan entre 3 y 7 días hábiles. Te enviaremos un número de seguimiento para que puedas monitorear tu pedido.</p>
+                <p>¿Aceptan devoluciones o cambios?
+                    Sí, ofrecemos devoluciones y cambios dentro de los primeros 15 días después de recibir tu pedido, siempre que las prendas estén en perfectas condiciones y con sus etiquetas originales. Para más información, revisa nuestra política de cambios y devoluciones.</p>
+                <p>¿Qué métodos de pago aceptan?
+                    Aceptamos pagos con tarjetas de crédito, débito, transferencias bancarias y plataformas como PayPal o Mercado Pago (según tu ubicación). Queremos que tu experiencia de compra sea lo más sencilla posible.</p>
             </section>
         </div>
     </main>
 
+<!-- FOOTER -->
     <footer id="footer">
-        <section class="footer-news">
-            <div class="mb-3">
-                <h4>Sé el primero en conocer nuestras ofertas y novedades!</h4>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-        </section>
-        <div class="footer-logoRedes">
-        <section class="footer-redes">
-            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+        <section class="footer__novedades">
+            <h4 class="footer__titulo">¡Sé el primero en conocer nuestras ofertas y novedades!</h4>
+            <input type="email" class="footer__input form-control" placeholder="correo@ejemplo.com">
         </section>
 
-        <section class="footer-logo">
-            <a href="#"><img src="../icons/logo-drew.png" alt="logo-drew"></a>
+        <section class="footer__contenido">
+            <section class="redes">
+                <div class="redes__grupo">
+                    <a href="https://www.instagram.com/" class="redes__enlace">
+                        <i class="redes__icono fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/" class="redes__enlace">
+                        <i class="redes__icono fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+
+                <a href="../index.html" class="footer__enlace-logo">
+                    <img src="../icons/logo-drew.png" alt="Logo Drew" class="footer__logo">
+                </a>
+
+                <div class="redes__grupo">
+                    <a href="https://www.x.com/" class="redes__enlace">
+                        <i class="redes__icono fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/" class="redes__enlace">
+                        <i class="redes__icono fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+            </section>
         </section>
 
-        <section class="footer-redes2">
-            <a href="https://www.x.com/"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
-        </section>
-        </div>
-        <section class="footer-toggle">
-            <p class="d-inline-flex gap-1">
-                <button type="button" class="btn" data-bs-toggle="button"><i class="fa-solid fa-toggle-on fa-2xl"></i></button>
-            </p>
+        <section class="tema">
+            <button type="button" class="tema__boton btn" data-bs-toggle="button">
+                <i class="tema__icono fa-solid fa-toggle-on fa-2xl"></i>
+            </button>
         </section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
