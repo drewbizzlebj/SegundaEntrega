@@ -439,6 +439,13 @@ html, body {
         flex-direction: column;
     }
 
+    /* CATALOGO */
+    .catalogo__main--h2 {
+        font-size: 40px;
+        font-family: 'Merriweather';
+        padding-top: 20px;
+    }
+
     /* FOOTER */
     #footer {
         flex-direction: column;
@@ -488,4 +495,3 @@ html, body {
         width: 100%;
     }
 }
-
