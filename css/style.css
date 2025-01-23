@@ -15,7 +15,7 @@ html, body {
 #body {
     max-width: 100%;
     min-height: 100vh;
-    background-color: rgb(234, 242, 248);
+    background-color: rgb(236, 240, 241);
     display: flex;
     flex-direction: column;
 }
@@ -32,7 +32,7 @@ html, body {
     width: 100%;
     height: 100%;
     text-align: center;
-    background-color: rgb(212, 230, 241);
+    background-color: rgb(23, 32, 42);
     display: flex;
     align-items: center;
 }
@@ -54,7 +54,7 @@ html, body {
     font-family: 'Merriweather';
     font-weight: bolder;
     font-size: 45px;
-    color: rgb(63, 99, 122);
+    color: rgb(213, 216, 220);
     display: inline-block;
     padding-right: 100px;
 }
@@ -68,7 +68,7 @@ html, body {
     padding: 10px;
     border: none;
     background: none;
-    color: rgb(63, 99, 122);
+    color: rgb(213, 216, 220);
     margin-right: 20px;
 }
 
@@ -83,7 +83,7 @@ html, body {
 .header__menu {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-right: 50px;
     width: 100%;
     height: 100%;
@@ -108,9 +108,15 @@ html, body {
     font-family: 'Merriweather';
     font-size: 25px;
     height: 100%;
-    color: rgb(63, 99, 122);
+    color: rgb(213, 216, 220);
     text-decoration: none;
     padding: 10px 15px;
+}
+
+.header__enlace:hover {
+    color: rgb(86, 101, 115);
+    transition: color 0.3s ease;
+    cursor: pointer;
 }
 
 .header__acciones {
@@ -122,7 +128,18 @@ html, body {
 }
 
 .header__acciones i {
-    padding-left: 10px;
+    padding-left: 7px;
+    color: rgb(213, 216, 220);
+}
+
+.header__acciones i:hover {
+    color: rgb(86, 101, 115);
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.header__icono {
+    padding: 40px;
 }
 
 /* =================================
@@ -148,14 +165,14 @@ html, body {
 .buscador__input {
     width: 30%;
     border-radius: 10px;
-    border-color: gainsboro;
+    border-color: rgb(213, 216, 220);
     padding: 8px 15px;
 }
 
 .main__titulo-destacados {
     font-family: 'Merriweather';
     font-size: 45px;
-    color: rgb(63, 99, 122);
+    color: rgb(23, 32, 42);
     font-weight: bolder;
     padding-top: 30px;
 }
@@ -175,20 +192,54 @@ html, body {
     background: white;
     border-radius: 10px;
     padding: 15px;
+    transition: box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.producto:hover {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.producto__titulo{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(23, 32, 42);
+}
+
+.producto__titulo:hover {
+    color: rgb(86, 101, 115);
+    transition: color 0.3s ease;
+    cursor: pointer;
 }
 
 .producto__imagen {
     width: 300px;
     height: auto;
+    transition: transform 0.3s ease;
+}
+
+.producto__imagen:hover {
+    transform: scale(1.04);
+    cursor: pointer;
 }
 
 .producto__descripcion {
     max-width: 85%;
     background-color: white;
     display: inline-block;
-    color: rgb(63, 99, 122);
+    color: rgb(23, 32, 42);
+    opacity: 80%;
+    font-size: 13px;
+    font-weight: 700;
     text-align: start;
-    margin-top: 10px;
+}
+
+.producto h3 {
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 10px;
 }
 
 /* =================================
@@ -198,7 +249,7 @@ html, body {
     width: 100%;
     height: auto;
     min-height: 110px;
-    background-color: rgb(212, 230, 241);
+    background-color: rgb(23, 32, 42);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -216,6 +267,7 @@ html, body {
 .footer__titulo {
     font-family: 'Merriweather';
     font-size: 15px;
+    color: rgb(213, 216, 220);
 }
 
 .footer__input {
@@ -248,7 +300,13 @@ html, body {
 }
 
 .redes__enlace {
-    color: rgb(63, 99, 122);
+    color: rgb(213, 216, 220);
+}
+
+.redes__enlace i:hover {
+    color: rgb(86, 101, 115);
+    transition: color 0.3s ease;
+    cursor: pointer;
 }
 
 .footer__logo {
@@ -278,7 +336,7 @@ html, body {
 }
 
 .catalogo__main--h2 {
-    font-size: 80px;
+    font-size: 60px;
     font-family: 'Merriweather';
     padding-top: 20px;
 }
@@ -362,7 +420,7 @@ html, body {
 ================================= */
 
 .nosotros__main--h2{
-    font-size: 40px;
+    font-size: 60px;
     padding-top: 60px;
     font-family: 'Merriweather';
 }
@@ -401,7 +459,7 @@ html, body {
         top: 120px;
         left: 0;
         width: 100%;
-        background-color: rgb(212, 230, 241);
+        background-color: rgb(23, 32, 42);
         z-index: 1000;
         padding: 20px;
     }
@@ -437,6 +495,9 @@ html, body {
     /* IMAGENES */
     .productos {
         flex-direction: column;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     /* CATALOGO */
