@@ -182,7 +182,7 @@ html, body {
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
     padding: 20px;
 }
 
@@ -192,7 +192,6 @@ html, body {
     border-radius: 10px;
     padding: 15px;
     transition: box-shadow 0.3s ease;
-    border-radius: 10px;
 }
 
 .producto:hover {
@@ -371,10 +370,10 @@ html, body {
 }
 
 .ubicacion__imagen--mapa {
-    width: 600px;
-    height: 500px;
+    width: 700px;
+    height: 600px;
     object-fit: cover;
-    padding: 0 50px 0 50px;
+    padding: 50px 50px 0 50px;
 }
 
 .ubicacion__ejemploSucursales {
@@ -390,7 +389,7 @@ html, body {
 }
 
 .ubicacion__sucursal {
-    flex: 0 1 300px;
+    flex: 0 1 150px;
     background: white;
     border-radius: 10px;
     padding: 10px;
@@ -424,6 +423,20 @@ html, body {
     border-radius: 60px;
     padding: 30px 80px 30px 80px;
     font-family: 'Merriweather';
+}
+
+.contacto__main--section h2 {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.contacto__main--section h3 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.contacto__main--section h4 {
+    font-size: 15px;
 }
 
 
@@ -512,6 +525,7 @@ html, body {
     /* IMAGENES */
     .productos {
         flex-direction: column;
+        width: 100%;
         height: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -533,8 +547,8 @@ html, body {
     }
 
     .ubicacion__imagen--mapa {
-        width: 100%;
-        max-width: 400px;
+        width: 600px;
+        height: 500px;
         height: auto;
     }
 
@@ -593,6 +607,49 @@ html, body {
         width: 100%;
         justify-content: center;
     }
+
+    /*          NOSOTROS             */
+
+    .nosotros__main--h2 {
+        font-size: 40px;
+    }
+
+    .nosotros__main--section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .nosotros__main--section img {
+        object-fit: cover;
+        width: 300px;
+        height: 300px;
+        padding: 20px;
+    }
+
+    .nosotros__main--section article {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nosotros__main--section p {
+        text-align: justify;
+        font-size: 10px;
+    }
+
+    /*          CONTACTO            */
+    .contacto__main {
+        padding: 0;
+    }
+
+    .contacto__main--section{
+        border: none;
+        padding: 30px;
+        justify-content: center;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -693,9 +750,11 @@ html, body {
     /*  IMAGENES  */
 
     .producto {
-        width: 150px;
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        height: auto;
         align-items: center;
-        justify-content: center;
     }
 
     .producto h3{
@@ -703,7 +762,9 @@ html, body {
     }
 
     .producto__imagen {
-        max-width: 150px;
+        max-width: 100%;
+        width: 150px;
+        height: auto;
     }
 
     .producto__titulo{
@@ -729,7 +790,13 @@ html, body {
     }
 
     .ubicacion__imagen--mapa {
-        max-width: 300px;
+        width: 450px;
+        height: 400px;
+    }
+
+    .ubicacion__sucursal {
+        height: 10px;
+        width: auto;
     }
 
     .ubicacion__sucursal h4 {
@@ -739,4 +806,16 @@ html, body {
     .ubicacion__sucursal p {
         font-size: 12px;
     }
+
+    /*          CONTACTO            */
+    .contacto__main {
+        padding: 0;
+    }
+
+    .contacto__main--section{
+        border: none;
+        padding: 30px;
+        justify-content: center;
+    }
+
 }
