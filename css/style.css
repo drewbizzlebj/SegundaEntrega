@@ -65,7 +65,6 @@ html, body {
 }
 
 .navbar-toggler {
-    padding: 10px;
     border: none;
     background: none;
     color: rgb(213, 216, 220);
@@ -477,7 +476,10 @@ html, body {
         z-index: 1000;
         padding: 20px;
     }
-
+    
+    .navbar-toggler i {
+        padding-top: 30px;
+    }
     .header__menu {
         flex-direction: column;
         padding: 20px;
@@ -495,6 +497,7 @@ html, body {
         width: auto;
         margin-top: 20px;
         gap: 20px;
+        padding-left: 30px;
     }
 
     .header__marca {
@@ -603,19 +606,18 @@ html, body {
     .navbar-toggler {
         margin-left: auto;
         padding: 5px;
-        background-color: #17202A; /* Fondo oscuro */
+        background-color: rgb(23, 32, 42);
         border: none;
         color: #D5D8DC;
         font-size: 20px;
     }
 
-    .navbar-toggler:focus {
-        outline: none;
-        box-shadow: none;
+    .navbar-toggler i{
+
     }
 
     .navbar-collapse {
-        background-color: #17202A; /* Fondo oscuro para el menú */
+        background-color: rgb(23, 32, 42);
         width: 100%;
         padding: 10px;
     }
