@@ -1,0 +1,33 @@
+/* =================================
+    NOSOTROS MAIN
+================================= */
+
+.nosotros__main--h2{
+    font-size: 60px;
+    padding-top: 60px;
+    font-family: 'Merriweather';
+}
+
+.nosotros__main--section {
+    display: flex;
+    padding: 60px 90px 90px 90px;  
+}
+
+.nosotros__main--section img {
+    width: 600px;
+    height: 500px;
+    object-fit: cover;
+    padding: 0 50px 50px 50px;
+}
+
+.nosotros__main--section p {
+    text-align: start;
+    font-size: 16px;
+    width: 70%;
+    font-family: 'Merriweather';
+}
+
+.nosotros__main--section article {
+    display: flex;
+    flex-direction: column;
+}

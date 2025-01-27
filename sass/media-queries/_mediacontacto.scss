@@ -1,0 +1,28 @@
+/* =================================
+    MEDIA QUERIES
+================================= */
+@media (max-width: 768px) {
+    /*          CONTACTO            */
+    .contacto__main {
+        padding: 0;
+    }
+
+    .contacto__main--section{
+        border: none;
+        padding: 30px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    /*          CONTACTO            */
+    .contacto__main {
+        padding: 0;
+    }
+
+    .contacto__main--section{
+        border: none;
+        padding: 30px;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,120 @@
+/* =================================
+    HEADER
+================================= */
+#header {
+    width: 100%;
+    height: 120px;
+}
+
+#nav {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(23, 32, 42);
+    display: flex;
+    align-items: center;
+}
+
+.header__marca {
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.header__imagen-logo {
+    width: 110px;
+    padding-right: 10px;
+}
+
+.header__titulo {
+    font-family: 'Merriweather';
+    font-weight: bolder;
+    font-size: 45px;
+    color: rgb(213, 216, 220);
+    display: inline-block;
+    padding-right: 100px;
+}
+
+/* ESTILOS BOOTSTRAP NAVBAR */
+.navbar {
+    padding: 0;
+}
+
+.navbar-toggler {
+    border: none;
+    background: none;
+    color: rgb(213, 216, 220);
+    margin-right: 20px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler i {
+    font-size: 24px;
+}
+
+.header__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-right: 50px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.header__lista {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.header__item {
+    display: inline-block;
+}
+
+.header__enlace {
+    font-family: 'Merriweather';
+    font-size: 25px;
+    height: 100%;
+    color: rgb(213, 216, 220);
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.header__enlace:hover {
+    color: rgb(86, 101, 115);
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.header__acciones {
+    width: 5%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__acciones i {
+    padding-left: 7px;
+    color: rgb(213, 216, 220);
+}
+
+.header__acciones i:hover {
+    color: rgb(86, 101, 115);
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.header__icono {
+    padding: 40px;
+}

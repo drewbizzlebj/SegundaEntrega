@@ -1,0 +1,35 @@
+/* =================================
+    MEDIA QUERIES
+================================= */
+@media (max-width: 768px) {
+    /*          NOSOTROS             */
+
+    .nosotros__main--h2 {
+        font-size: 40px;
+    }
+
+    .nosotros__main--section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .nosotros__main--section img {
+        object-fit: cover;
+        width: 300px;
+        height: 300px;
+        padding: 20px;
+    }
+
+    .nosotros__main--section article {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nosotros__main--section p {
+        text-align: justify;
+        font-size: 10px;
+    }
+}

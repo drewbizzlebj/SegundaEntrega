@@ -1,0 +1,31 @@
+/* =================================
+    CATALOGO MAIN
+================================= */
+
+.catalogo-formSelect{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-select{
+    width: 10%;
+    border-radius: 20px;
+}
+
+.catalogo__main--h2 {
+    font-size: 60px;
+    font-family: 'Merriweather';
+    padding-top: 20px;
+}
+.catalogo__article--p {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    padding-top: 20px;
+    overflow-y: auto;
+    object-fit: cover;
+}

@@ -1,0 +1,51 @@
+/* =================================
+    UBICACION MAIN
+================================= */
+
+.ubicacion__main--h2 {
+    font-size: 60px;
+    padding-top: 60px;
+    font-family: 'Merriweather';
+}
+
+.ubicacion__main--mapa {
+    display: flex;
+    justify-content: center;
+    max-height: 100%;
+    max-width: 100%;
+    padding-top: 80px;
+    padding-bottom: 110px;
+}
+
+.ubicacion__imagen--mapa {
+    width: 700px;
+    height: 600px;
+    object-fit: cover;
+    padding: 50px 50px 0 50px;
+}
+
+.ubicacion__ejemploSucursales {
+    height: 100%;
+    width: 60%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    text-align: start;
+    padding-top: 60px;
+    font-family: 'Merriweather';
+}
+
+.ubicacion__sucursal {
+    flex: 0 1 150px;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    transition: box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.ubicacion__sucursal:hover {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}

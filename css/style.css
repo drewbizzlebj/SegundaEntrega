@@ -1,821 +1,776 @@
 /*RESET STYLES*/
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html, body {
-    width: 100%;
+  width: 100%;
 }
 
 /* =================================
     ELEMENTOS BASE
 ================================= */
 #body {
-    max-width: 100%;
-    min-height: 100vh;
-    background-color: rgb(236, 240, 241);
-    display: flex;
-    flex-direction: column;
+  max-width: 100%;
+  min-height: 100vh;
+  background-color: rgb(236, 240, 241);
+  display: flex;
+  flex-direction: column;
 }
 
 /* =================================
     HEADER
 ================================= */
 #header {
-    width: 100%;
-    height: 120px;
+  width: 100%;
+  height: 120px;
 }
 
 #nav {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    background-color: rgb(23, 32, 42);
-    display: flex;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: rgb(23, 32, 42);
+  display: flex;
+  align-items: center;
 }
 
 .header__marca {
-    height: 100%;
-    width: auto;
-    display: flex;
-    align-items: center;
-    padding-left: 50px;
+  height: 100%;
+  width: auto;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
 }
 
 .header__imagen-logo {
-    width: 110px;
-    padding-right: 10px;
+  width: 110px;
+  padding-right: 10px;
 }
 
 .header__titulo {
-    font-family: 'Merriweather';
-    font-weight: bolder;
-    font-size: 45px;
-    color: rgb(213, 216, 220);
-    display: inline-block;
-    padding-right: 100px;
+  font-family: "Merriweather";
+  font-weight: bolder;
+  font-size: 45px;
+  color: rgb(213, 216, 220);
+  display: inline-block;
+  padding-right: 100px;
 }
 
 /* ESTILOS BOOTSTRAP NAVBAR */
 .navbar {
-    padding: 0;
+  padding: 0;
 }
 
 .navbar-toggler {
-    border: none;
-    background: none;
-    color: rgb(213, 216, 220);
-    margin-right: 20px;
+  border: none;
+  background: none;
+  color: rgb(213, 216, 220);
+  margin-right: 20px;
 }
 
 .navbar-toggler:focus {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .navbar-toggler i {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .header__menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-right: 50px;
-    width: 100%;
-    height: 100%;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-right: 50px;
+  width: 100%;
+  height: 100%;
+  align-items: center;
 }
 
 .header__lista {
-    width: 60%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0;
-    margin: 0;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
 }
 
 .header__item {
-    display: inline-block;
+  display: inline-block;
 }
 
 .header__enlace {
-    font-family: 'Merriweather';
-    font-size: 25px;
-    height: 100%;
-    color: rgb(213, 216, 220);
-    text-decoration: none;
-    padding: 10px 15px;
+  font-family: "Merriweather";
+  font-size: 25px;
+  height: 100%;
+  color: rgb(213, 216, 220);
+  text-decoration: none;
+  padding: 10px 15px;
 }
 
 .header__enlace:hover {
-    color: rgb(86, 101, 115);
-    transition: color 0.3s ease;
-    cursor: pointer;
+  color: rgb(86, 101, 115);
+  transition: color 0.3s ease;
+  cursor: pointer;
 }
 
 .header__acciones {
-    width: 5%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 5%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__acciones i {
-    padding-left: 7px;
-    color: rgb(213, 216, 220);
+  padding-left: 7px;
+  color: rgb(213, 216, 220);
 }
 
 .header__acciones i:hover {
-    color: rgb(86, 101, 115);
-    transition: color 0.3s ease;
-    cursor: pointer;
+  color: rgb(86, 101, 115);
+  transition: color 0.3s ease;
+  cursor: pointer;
 }
 
 .header__icono {
-    padding: 40px;
+  padding: 40px;
 }
 
 /* =================================
     MAIN
 ================================= */
 #main {
-    max-width: 100%;
-    flex: 1;
-    overflow-x: hidden;
-    margin: 0 auto;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  max-width: 100%;
+  flex: 1;
+  overflow-x: hidden;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .buscador {
-    width: 100%;
-    height: 100%;
-    padding: 10px 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
 }
 
 .buscador__input {
-    width: 30%;
-    border-radius: 10px;
-    border-color: rgb(213, 216, 220);
-    padding: 8px 15px;
+  width: 30%;
+  border-radius: 10px;
+  border-color: rgb(213, 216, 220);
+  padding: 8px 15px;
 }
 
 .main__titulo-destacados {
-    font-family: 'Merriweather';
-    font-size: 45px;
-    color: rgb(23, 32, 42);
-    font-weight: bolder;
-    padding-top: 30px;
+  font-family: "Merriweather";
+  font-size: 45px;
+  color: rgb(23, 32, 42);
+  font-weight: bolder;
+  padding-top: 30px;
 }
 
 .productos {
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
 }
 
 .producto {
-    flex: 0 1 300px;
-    background: white;
-    border-radius: 10px;
-    padding: 15px;
-    transition: box-shadow 0.3s ease;
+  flex: 0 1 300px;
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  transition: box-shadow 0.3s ease;
 }
 
 .producto:hover {
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
-.producto__titulo{
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 700;
-    color: rgb(23, 32, 42);
+.producto__titulo {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(23, 32, 42);
 }
 
 .producto__titulo:hover {
-    color: rgb(86, 101, 115);
-    transition: color 0.3s ease;
-    cursor: pointer;
+  color: rgb(86, 101, 115);
+  transition: color 0.3s ease;
+  cursor: pointer;
 }
 
 .producto__imagen {
-    width: 300px;
-    height: auto;
-    transition: transform 0.3s ease;
+  width: 300px;
+  height: auto;
+  transition: transform 0.3s ease;
 }
 
 .producto__imagen:hover {
-    transform: scale(1.04);
-    cursor: pointer;
+  transform: scale(1.04);
+  cursor: pointer;
 }
 
 .producto__descripcion {
-    max-width: 85%;
-    background-color: white;
-    display: inline-block;
-    color: rgb(23, 32, 42);
-    opacity: 80%;
-    font-size: 13px;
-    font-weight: 700;
-    text-align: start;
+  max-width: 85%;
+  background-color: white;
+  display: inline-block;
+  color: rgb(23, 32, 42);
+  opacity: 80%;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: start;
 }
 
 .producto h3 {
-    font-size: 20px;
-    font-weight: 700;
-    padding-top: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 10px;
 }
 
 /* =================================
     FOOTER
 ================================= */
 #footer {
-    width: 100%;
-    height: auto;
-    min-height: 110px;
-    background-color: rgb(23, 32, 42);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
+  width: 100%;
+  height: auto;
+  min-height: 110px;
+  background-color: rgb(23, 32, 42);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
 }
 
 .footer__novedades {
-    width: 35%;
-    max-height: 100%;
-    display: flex;
-    align-items: center;
+  width: 35%;
+  max-height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .footer__titulo {
-    font-family: 'Merriweather';
-    font-size: 15px;
-    color: rgb(213, 216, 220);
+  font-family: "Merriweather";
+  font-size: 15px;
+  color: rgb(213, 216, 220);
 }
 
 .footer__input {
-    width: 300px;
+  width: 300px;
 }
 
 .footer__contenido {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    gap: 20px;
-    padding-right: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  gap: 20px;
+  padding-right: 140px;
 }
 
 .redes {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 15px;
 }
 
 .redes__grupo {
-    display: flex;
-    gap: 15px;
+  display: flex;
+  gap: 15px;
 }
 
 .redes__enlace {
-    color: rgb(213, 216, 220);
+  color: rgb(213, 216, 220);
 }
 
 .redes__enlace i:hover {
-    color: rgb(86, 101, 115);
-    transition: color 0.3s ease;
-    cursor: pointer;
+  color: rgb(86, 101, 115);
+  transition: color 0.3s ease;
+  cursor: pointer;
 }
 
 .footer__logo {
-    width: 80px;
-    padding: 0 15px;
+  width: 80px;
+  padding: 0 15px;
 }
 
 .tema {
-    width: 35%;
-    display: flex;
-    justify-content: flex-end;
+  width: 35%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* =================================
     CATALOGO MAIN
 ================================= */
-
-.catalogo-formSelect{
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
+.catalogo-formSelect {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.form-select{
-    width: 10%;
-    border-radius: 20px;
+.form-select {
+  width: 10%;
+  border-radius: 20px;
 }
 
 .catalogo__main--h2 {
-    font-size: 60px;
-    font-family: 'Merriweather';
-    padding-top: 20px;
+  font-size: 60px;
+  font-family: "Merriweather";
+  padding-top: 20px;
 }
+
 .catalogo__article--p {
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: repeat(4, 1fr);
-    gap: 8px;
-    padding-top: 20px;
-    overflow-y: auto;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  padding-top: 20px;
+  overflow-y: auto;
+  object-fit: cover;
 }
 
 /* =================================
     UBICACION MAIN
 ================================= */
-
 .ubicacion__main--h2 {
-    font-size: 60px;
-    padding-top: 60px;
-    font-family: 'Merriweather';
+  font-size: 60px;
+  padding-top: 60px;
+  font-family: "Merriweather";
 }
 
 .ubicacion__main--mapa {
-    display: flex;
-    justify-content: center;
-    max-height: 100%;
-    max-width: 100%;
-    padding-top: 80px;
-    padding-bottom: 110px;
+  display: flex;
+  justify-content: center;
+  max-height: 100%;
+  max-width: 100%;
+  padding-top: 80px;
+  padding-bottom: 110px;
 }
 
 .ubicacion__imagen--mapa {
-    width: 700px;
-    height: 600px;
-    object-fit: cover;
-    padding: 50px 50px 0 50px;
+  width: 700px;
+  height: 600px;
+  object-fit: cover;
+  padding: 50px 50px 0 50px;
 }
 
 .ubicacion__ejemploSucursales {
-    height: 100%;
-    width: 60%;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
-    text-align: start;
-    padding-top: 60px;
-    font-family: 'Merriweather';
+  height: 100%;
+  width: 60%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  text-align: start;
+  padding-top: 60px;
+  font-family: "Merriweather";
 }
 
 .ubicacion__sucursal {
-    flex: 0 1 150px;
-    background: white;
-    border-radius: 10px;
-    padding: 10px;
-    transition: box-shadow 0.3s ease;
-    border-radius: 10px;
+  flex: 0 1 150px;
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  transition: box-shadow 0.3s ease;
+  border-radius: 10px;
 }
 
 .ubicacion__sucursal:hover {
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+/* =================================
+    NOSOTROS MAIN
+================================= */
+.nosotros__main--h2 {
+  font-size: 60px;
+  padding-top: 60px;
+  font-family: "Merriweather";
+}
+
+.nosotros__main--section {
+  display: flex;
+  padding: 60px 90px 90px 90px;
+}
+
+.nosotros__main--section img {
+  width: 600px;
+  height: 500px;
+  object-fit: cover;
+  padding: 0 50px 50px 50px;
+}
+
+.nosotros__main--section p {
+  text-align: start;
+  font-size: 16px;
+  width: 70%;
+  font-family: "Merriweather";
+}
+
+.nosotros__main--section article {
+  display: flex;
+  flex-direction: column;
 }
 
 /* =================================
     CONTACTO MAIN
 ================================= */
-
-.contacto__main{
-    width: 100%;
-    display: flex;
-    text-align: start;
-    padding: 70px 50px 70px 50px;
+.contacto__main {
+  width: 100%;
+  display: flex;
+  text-align: start;
+  padding: 70px 50px 70px 50px;
 }
 
-.contacto__main--section{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    border: 5px;
-    border-style: solid;
-    border-color: rgb(192, 192, 192);
-    border-radius: 60px;
-    padding: 30px 80px 30px 80px;
-    font-family: 'Merriweather';
+.contacto__main--section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 5px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  border-radius: 60px;
+  padding: 30px 80px 30px 80px;
+  font-family: "Merriweather";
 }
 
 .contacto__main--section h2 {
-    font-weight: 700;
-    font-size: 30px;
+  font-weight: 700;
+  font-size: 30px;
 }
 
 .contacto__main--section h3 {
-    font-weight: 600;
-    font-size: 20px;
-}
-
-.contacto__main--section h4 {
-    font-size: 15px;
-}
-
-
-
-/* =================================
-    NOSOTROS MAIN
-================================= */
-
-.nosotros__main--h2{
-    font-size: 60px;
-    padding-top: 60px;
-    font-family: 'Merriweather';
-}
-
-.nosotros__main--section {
-    display: flex;
-    padding: 60px 90px 90px 90px;  
-}
-
-.nosotros__main--section img {
-    width: 600px;
-    height: 500px;
-    object-fit: cover;
-    padding: 0 50px 50px 50px;
-}
-
-.nosotros__main--section p {
-    text-align: start;
-    font-size: 16px;
-    width: 70%;
-    font-family: 'Merriweather';
-}
-
-.nosotros__main--section article {
-    display: flex;
-    flex-direction: column;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 /* =================================
     MEDIA QUERIES
 ================================= */
 @media (max-width: 768px) {
-    /* HEADER Y NAVBAR */
-    .navbar-collapse {
-        position: absolute;
-        top: 120px;
-        left: 0;
-        width: 100%;
-        background-color: rgb(23, 32, 42);
-        z-index: 1000;
-        padding: 20px;
-    }
-    
-    .navbar-toggler i {
-        padding-top: 30px;
-    }
-    .header__menu {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .header__lista {
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        gap: 20px;
-        padding-bottom: 20px;
-    }
-
-    .header__acciones {
-        width: auto;
-        margin-top: 20px;
-        gap: 20px;
-        padding-left: 30px;
-    }
-
-    .header__marca {
-        padding-left: 20px;
-    }
-
-    /* BUSCADOR */
-    .buscador__input {
-        width: 60%;
-    }
-
-    /* IMAGENES */
-    .productos {
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /* UBICACION */
-
-    .ubicacion__main--h2 {
-        font-size: 35px;
-        text-align: center;
-        padding: 20px 10px;
-    }
-
-    .ubicacion__main--mapa {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        padding: 10px;
-    }
-
-    .ubicacion__imagen--mapa {
-        width: 600px;
-        height: 500px;
-        height: auto;
-    }
-
-    .ubicacion__ejemploSucursales {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        padding: 10px;
-    }
-
-    .ubicacion__sucursal {
-        background-color: #f8f9fa;
-        padding: 15px;
-        border-radius: 10px;
-        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .ubicacion__sucursal h4 {
-        font-size: 20px;
-    }
-
-    .ubicacion__sucursal p {
-        font-size: 14px;
-    }
-
-    /* CATALOGO */
-    .catalogo__main--h2 {
-        font-size: 40px;
-        font-family: 'Merriweather';
-        padding-top: 20px;
-    }
-
-    /* FOOTER */
-    #footer {
-        flex-direction: column;
-        height: auto;
-        gap: 20px;
-    }
-
-    .footer__contenido {
-        padding-left: 140px;
-    }
-
-    .footer__novedades {
-        width: 100%;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .footer__input {
-        width: 100%;
-    }
-
-    .tema {
-        width: 100%;
-        justify-content: center;
-    }
-
-    /*          NOSOTROS             */
-
-    .nosotros__main--h2 {
-        font-size: 40px;
-    }
-
-    .nosotros__main--section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-    }
-
-    .nosotros__main--section img {
-        object-fit: cover;
-        width: 300px;
-        height: 300px;
-        padding: 20px;
-    }
-
-    .nosotros__main--section article {
-        justify-content: center;
-        align-items: center;
-    }
-
-    .nosotros__main--section p {
-        text-align: justify;
-        font-size: 10px;
-    }
-
-    /*          CONTACTO            */
-    .contacto__main {
-        padding: 0;
-    }
-
-    .contacto__main--section{
-        border: none;
-        padding: 30px;
-        justify-content: center;
-    }
-
+  /* HEADER Y NAVBAR */
+  .navbar-collapse {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    background-color: rgb(23, 32, 42);
+    z-index: 1000;
+    padding: 20px;
+  }
+  .navbar-toggler i {
+    padding-top: 30px;
+  }
+  .header__menu {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .header__lista {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+  .header__acciones {
+    width: auto;
+    margin-top: 20px;
+    gap: 20px;
+    padding-left: 30px;
+  }
+  .header__marca {
+    padding-left: 20px;
+  }
+  /* BUSCADOR */
+  .buscador__input {
+    width: 60%;
+  }
+  /* IMAGENES */
+  .productos {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* FOOTER */
+  #footer {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+  .footer__contenido {
+    padding-left: 140px;
+  }
+  .footer__novedades {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer__input {
+    width: 100%;
+  }
+  .tema {
+    width: 100%;
+    justify-content: center;
+  }
 }
-
 @media (max-width: 480px) {
-
-    h1 {
-        padding-right: 0;
-    }
-    .navbar {
-        max-width: 100%;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    .navbar-toggler {
-        max-width: 100%;
-        background-color: rgb(23, 32, 42);
-        border: none;
-        color: #D5D8DC;
-        font-size: 10px;
-        margin: 0;
-        padding: 0;
-    }
-
-    .navbar-toggler i{
-        padding: 0;
-        margin: 0;
-    }
-
-    .navbar-collapse {
-        background-color: rgb(23, 32, 42);
-        width: 100%;
-        padding: 10px;
-    }
-
-    .header__menu {
-        flex-direction: column;
-        width: 100%;
-        gap: 10px;
-        text-align: center;
-    }
-
-    .header__lista {
-        flex-direction: column;
-        width: 100%;
-        gap: 15px;
-    }
-
-    .header__item {
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-
-    .header__enlace {
-        font-size: 18px;
-        color: #D5D8DC;
-        text-decoration: none;
-    }
-
-    .header__enlace:hover {
-        color: #566573;
-    }
-
-    .header__acciones {
-        margin-top: 10px;
-        gap: 15px;
-        justify-content: center;
-    }
-
-    .header__icono {
-        font-size: 20px;
-    }
-    
-    .header__titulo {
-        padding-right: 0;
-        font-size: 40px;
-    }
-
-    .header__imagen-logo {
-        width: 80px;
-    }
-
-    .header__marca{
-        padding-left: 0;
-    }
-
-    /*  BUSCADOR INPUT  */
-    .buscador__input {
-        width: 90%;
-    }
-
-    /*      MAIN        */
-    .main__titulo-destacados {
-        font-size: 30px;
-    }
-
-    /*  IMAGENES  */
-
-    .producto {
-        display: flex;
-        flex-direction: column;
-        max-width: 100%;
-        height: auto;
-        align-items: center;
-    }
-
-    .producto h3{
-        font-size: 10px;
-    }
-
-    .producto__imagen {
-        max-width: 100%;
-        width: 150px;
-        height: auto;
-    }
-
-    .producto__titulo{
-        font-size: 10px;
-    }
-
-    .producto__imagen{
-        width: 100px;
-    }
-
-    .producto__descripcion{
-        font-size: 7px;
-    }
-
-    /*  FOOTER  */
-    .footer__input {
-        width: 100%;
-    }
-
-    /*     UBICACION      */
-    .ubicacion__main--h2 {
-        font-size: 28px;
-    }
-
-    .ubicacion__imagen--mapa {
-        width: 450px;
-        height: 400px;
-    }
-
-    .ubicacion__sucursal {
-        height: 10px;
-        width: auto;
-    }
-
-    .ubicacion__sucursal h4 {
-        font-size: 18px;
-    }
-
-    .ubicacion__sucursal p {
-        font-size: 12px;
-    }
-
-    /*          CONTACTO            */
-    .contacto__main {
-        padding: 0;
-    }
-
-    .contacto__main--section{
-        border: none;
-        padding: 30px;
-        justify-content: center;
-    }
-
+  h1 {
+    padding-right: 0;
+  }
+  .navbar {
+    max-width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .navbar-toggler {
+    max-width: 100%;
+    background-color: rgb(23, 32, 42);
+    border: none;
+    color: #D5D8DC;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar-toggler i {
+    padding: 0;
+    margin: 0;
+  }
+  .navbar-collapse {
+    background-color: rgb(23, 32, 42);
+    width: 100%;
+    padding: 10px;
+  }
+  .header__menu {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    text-align: center;
+  }
+  .header__lista {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+  .header__item {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .header__enlace {
+    font-size: 18px;
+    color: #D5D8DC;
+    text-decoration: none;
+  }
+  .header__enlace:hover {
+    color: #566573;
+  }
+  .header__acciones {
+    margin-top: 10px;
+    gap: 15px;
+    justify-content: center;
+  }
+  .header__icono {
+    font-size: 20px;
+  }
+  .header__titulo {
+    padding-right: 0;
+    font-size: 40px;
+  }
+  .header__imagen-logo {
+    width: 80px;
+  }
+  .header__marca {
+    padding-left: 0;
+  }
+  /*  BUSCADOR INPUT  */
+  .buscador__input {
+    width: 90%;
+  }
+  /*      MAIN        */
+  .main__titulo-destacados {
+    font-size: 30px;
+  }
+  /*  IMAGENES  */
+  .producto {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+  }
+  .producto h3 {
+    font-size: 10px;
+  }
+  .producto__imagen {
+    max-width: 100%;
+    width: 150px;
+    height: auto;
+  }
+  .producto__titulo {
+    font-size: 10px;
+  }
+  .producto__imagen {
+    width: 100px;
+  }
+  .producto__descripcion {
+    font-size: 7px;
+  }
+  /*  FOOTER  */
+  .footer__input {
+    width: 100%;
+  }
 }
+/* =================================
+    MEDIA QUERIES
+================================= */
+@media (max-width: 768px) {
+  /* CATALOGO */
+  .catalogo__main--h2 {
+    font-size: 40px;
+    font-family: "Merriweather";
+    padding-top: 20px;
+  }
+}
+/* =================================
+    MEDIA QUERIES
+================================= */
+@media (max-width: 768px) {
+  /* UBICACION */
+  .ubicacion__main--h2 {
+    font-size: 35px;
+    text-align: center;
+    padding: 20px 10px;
+  }
+  .ubicacion__main--mapa {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+  }
+  .ubicacion__imagen--mapa {
+    width: 600px;
+    height: 500px;
+    height: auto;
+  }
+  .ubicacion__ejemploSucursales {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+  }
+  .ubicacion__sucursal {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .ubicacion__sucursal h4 {
+    font-size: 20px;
+  }
+  .ubicacion__sucursal p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  /*     UBICACION      */
+  .ubicacion__main--h2 {
+    font-size: 28px;
+  }
+  .ubicacion__imagen--mapa {
+    width: 450px;
+    height: 400px;
+  }
+  .ubicacion__sucursal {
+    height: 10px;
+    width: auto;
+  }
+  .ubicacion__sucursal h4 {
+    font-size: 18px;
+  }
+  .ubicacion__sucursal p {
+    font-size: 12px;
+  }
+}
+/* =================================
+    MEDIA QUERIES
+================================= */
+@media (max-width: 768px) {
+  /*          NOSOTROS             */
+  .nosotros__main--h2 {
+    font-size: 40px;
+  }
+  .nosotros__main--section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .nosotros__main--section img {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+  }
+  .nosotros__main--section article {
+    justify-content: center;
+    align-items: center;
+  }
+  .nosotros__main--section p {
+    text-align: justify;
+    font-size: 10px;
+  }
+}
+/* =================================
+    MEDIA QUERIES
+================================= */
+@media (max-width: 768px) {
+  /*          CONTACTO            */
+  .contacto__main {
+    padding: 0;
+  }
+  .contacto__main--section {
+    border: none;
+    padding: 30px;
+    justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  /*          CONTACTO            */
+  .contacto__main {
+    padding: 0;
+  }
+  .contacto__main--section {
+    border: none;
+    padding: 30px;
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
