@@ -46,13 +46,45 @@
     }
 
     /* IMAGENES */
+
     .productos {
-        flex-direction: column;
         width: 100%;
         height: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
     }
+
+    .producto {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        height: auto;
+        align-items: center;
+    }
+
+    .producto h3{
+        font-size: 10px;
+    }
+
+    .producto__imagen {
+        max-width: 100%;
+        width: 150px;
+        height: auto;
+    }
+
+    .producto__titulo{
+        font-size: 10px;
+    }
+
+    .producto__imagen{
+        width: 100px;
+    }
+
+    .producto__descripcion{
+        font-size: 7px;
+    }
+
         /* FOOTER */
         #footer {
             flex-direction: column;
